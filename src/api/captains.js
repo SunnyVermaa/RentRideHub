@@ -3,11 +3,20 @@ const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const API = axios.create({
     baseURL: import.meta.env.VITE_BASE_URL,
+     headers: { 'Content-Type': 'application/json' },
     withCredentials: true
 });
 
-export const captainRegister = (data) => API.post('captains/register', data);
-export const captainsLogin = (credential) => API.post('captains/login', credential);
+export const captainRegister = (data) => API.post('captains/register', data,
+  {
+    headers: { 'Content-Type': 'application/json' }
+  }
+);
+export const captainsLogin = (credential) => API.post('captains/login', credential,
+  {
+    headers: { 'Content-Type': 'application/json' }
+  }
+);
 export const getCaptainsProfile = () => API.get('captains/profile');
 export const getStatus = () => API.patch('captains/status');
 export const updateCaptainLocation = async (location) => {
