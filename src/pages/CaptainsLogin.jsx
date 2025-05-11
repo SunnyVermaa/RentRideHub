@@ -25,7 +25,7 @@ const CaptainsLogin = () => {
         });
 
         // Save token if needed
-        localStorage.setItem('captainToken', res.data.token);
+        localStorage.setItem('token', res.data.token);
         
   
 

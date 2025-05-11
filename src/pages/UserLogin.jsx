@@ -14,7 +14,7 @@ export default function UserLogin() {
             const res = await userLogin({ email, password });
             // console.log(res);
             
-            localStorage.setItem("userToken", res.data.token);
+            localStorage.setItem("token", res.data.token);
             alert("Login successfully");
             navigate("/users/profile");
           } catch (err) {
