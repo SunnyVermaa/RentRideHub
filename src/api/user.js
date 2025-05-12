@@ -5,6 +5,15 @@ const API = axios.create({
     headers: { 'Content-Type': 'application/json' },
     withCredentials: true
 });
+API.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token'); // <-- Assumes token is saved here after login
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+}, (error) => {
+  return Promise.reject(error);
+});
 
 export const userRegister = (userData) => API.post('users/register', userData,{
     headers: { 'Content-Type': 'application/json' }
