@@ -36,14 +36,14 @@ const LocationSearch = ({ role = "user" }) => {
       const suggestions = await getSuggestion(value);
       setPickupSuggestions(suggestions);
     }
-  }, 10);
+  }, 300);
 
   const fetchDestinationSuggestions = debounce(async (value) => {
     if (value.length > 2) {
       const suggestions = await getSuggestion(value);
       setDestinationSuggestions(suggestions);
     }
-  }, 10);
+  }, 300);
 
   // Handle input changes
   const handlePickupChange = (e) => {
