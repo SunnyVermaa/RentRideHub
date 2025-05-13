@@ -71,7 +71,18 @@ const API = axios.create({
     headers: { 'Content-Type': 'application/json' },
     withCredentials: true
 });
-  
+
+// Add the authorization interceptor
+API.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+}, (error) => {
+  return Promise.reject(error);
+});
+
 export const getSuggestion = async (input) => {
   try {
     const res = await API.get(`/maps/get-suggestions?input=${input}`);
