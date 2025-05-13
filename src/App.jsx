@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import UserRegister from "./pages/UserRegister";
 import UserLogin from "./pages/UserLogin";
 import UserProfile from "./pages/UserProfile";
@@ -18,14 +18,26 @@ import Footer from "./components/Footer/Footer";
 
 
 function App(){
-  // const[theme, setTheme] = useState('day')
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+    const showFooterPaths = [
+    "/users/register",
+    "/users/login",
+    "/users/profile",
+    "/captains/register",
+    "/captains/login",
+    "/captains/profile"
+  ];
+
+   const showFooter = showFooterPaths.includes(currentPath);
 
   return (
     <>
     <Header/>
   <Routes>
 
-    <Route path="/" element={<Home/>}/>
+    <Route path="/" element={<Home/>} />
     <Route path="/users/register" element={<UserRegister/>}/>
     <Route path="/users/login" element={<UserLogin/>}/>
     <Route path="/users/profile" element={<UserProfile/>}/>
@@ -37,8 +49,7 @@ function App(){
     <Route path="/captains/ride" element={<CaptainRide />}/>
     
   </Routes>
-
-      <Footer/>
+{showFooter && <Footer />}
     </>
   )
 }
