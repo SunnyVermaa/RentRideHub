@@ -26,15 +26,7 @@ export default function UserLogin() {
 
     return(
         <>
-        {/* <form onSubmit={handleSubmit}>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="email" required minLength={5} className=""/>
-        <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="password" required minLength={6}/>
-        <button type="submit"> login </button>
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE1ZjM4YzE0M2M4Njc1NmEyZTMwNmEiLCJpYXQiOjE3NDYyNjkwODMsImV4cCI6MTc0NjM1NTQ4M30.kXoiigFthxA7Brmns8HrAb8NffLnWAw4W05Y04D0nD4"
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE1ZjM4YzE0M2M4Njc1NmEyZTMwNmEiLCJpYXQiOjE3NDYyNjkwNjgsImV4cCI6MTc0NjM1NTQ2OH0.grIz-XDPSLlndq3Vn-AhrNs5h9x_t5uvHzn6x3dzqK8"
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE1ZTI2MTE0M2M4Njc1NmEyZTMwNGYiLCJpYXQiOjE3NDY0MjU3NTIsImV4cCI6MTc0NjUxMjE1Mn0.dU3U0BhVL2TWkBtAhCQInVnu1f5BQo3EYce2RRec_VI"
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE1ZjM4YzE0M2M4Njc1NmEyZTMwNmEiLCJpYXQiOjE3NDY0MjU3MzQsImV4cCI6MTc0NjUxMjEzNH0.6HymZq-P62QTtfJ5BSgYKceqZ3STgHUMRjiw-fvVsWs"
-        </form> */}
+      
 
 <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100 px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
