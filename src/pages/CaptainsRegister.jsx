@@ -52,7 +52,7 @@ export default function CaptainsRegister() {
             <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 px-4">
                 <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
                     <h2 className="text-2xl font-bold text-center text-blue-600 mb-6">
-                        Captain Login
+                        Captain Register
                     </h2>
                     <form onSubmit={handelSubmit} className="space-y-5">
                         <div>
