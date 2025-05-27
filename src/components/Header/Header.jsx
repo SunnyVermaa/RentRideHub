@@ -12,14 +12,14 @@ const Header = () => {
   };
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center p-4">
+      <div className="container flex justify-between items-center p-4">
         {/* Logo */}
         <div className="flex items-center">
           <img src={Logo_black} alt="Logo" className="h-10 w-auto" />
         </div>
 
         {/* Nav Links */}
-        <nav className="flex space-x-6">
+        <nav className="flex space-x-10">
           <NavLink
             to="/"
             className={({ isActive }) =>

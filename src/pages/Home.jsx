@@ -45,7 +45,7 @@ const Home = () =>{
         <div className="elem">
             <div className="elem-part1">
             <h2>Search engine optimization</h2>
-            <h4>leran more</h4>
+            <h4>learn more</h4>
             </div>
             <div className="elem-part2">
                 <img src={MobileIcon} alt="" />
@@ -54,7 +54,7 @@ const Home = () =>{
         <div className="elem black">
         <div className="elem-part1">
             <h2>Pay Per Click Advertisement</h2>
-            <h4>leran more</h4>
+            <h4>learn more</h4>
             </div>
             <div className="elem-part2">
                 <img src={DeveloperIcon} alt="" />
@@ -64,7 +64,7 @@ const Home = () =>{
         <div className="elem black">
         <div className="elem-part1">
             <h2>Social Media Marketing</h2>
-            <h4>leran more</h4>
+            <h4>learn more</h4>
             </div>
             <div className="elem-part2">
                 <img src={RocketIcon} alt="" />
@@ -73,7 +73,7 @@ const Home = () =>{
         <div className="elem">
         <div className="elem-part1">
             <h2>E-mail Marketing</h2>
-            <h4>leran more</h4>
+            <h4>learn more</h4>
             </div>
             <div className="elem-part2">
                 <img src={SupportIcon} alt="" />
